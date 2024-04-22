@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import Mlogo from "../assets/SWDlogo.svg";
+import Mlogo from "../assets/combilogo.png";
 
 export default function Sidehoved() {
 
