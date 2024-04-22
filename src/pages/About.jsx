@@ -2,7 +2,6 @@ import folderarrow from "../assets/folderpilned.svg";
 import Stortlogo from "../components/Stortlogo";
 import Centertekst from "../components/Centertekst";
 import pageload from "../assets/pageloadevergreen.svg";
-import Folderdescribtion from "../components/Folderdescribtion";
 import { Link } from "react-router-dom";
 
 export default function About() {

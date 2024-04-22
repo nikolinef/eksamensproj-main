@@ -13,17 +13,17 @@ function App() {
 
   return (
     <>
-      <Sidehoved />
-      <Routes>
-        <Route path="/" element={<HomePage/>}/>
-        <Route path="/products" element={<Products/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path="/memberpage" element={<Memberpage/>}/>
-        <Route path="*" element={<Navigate to="/"/>}/>
-      </Routes>
-      
-      <Footer/>
+          <Sidehoved />
+          <Routes>
+            <Route path="/" element={<HomePage/>}/>
+            <Route path="/products" element={<Products/>}/>
+            <Route path="/about" element={<About/>}/>
+
+            <Route path="/contact" element={<Contact/>}/>
+            <Route path="/memberpage" element={<Memberpage/>}/>
+            <Route path="*" element={<Navigate to="/"/>}/>
+          </Routes>
+          <Footer/>
     </>
   )
 }

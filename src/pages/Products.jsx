@@ -22,7 +22,7 @@ export default function Products() {
     <div className="baggrund">
 
 
-        <Centertekst overskrift="Pakker vi tilbyder" brodtekst="Herunder kan du læse, hvilke ydelser der høre med i de forskellige pakker. 
+        <Centertekst overskrift="Pakker vi tilbyder" brodtekst="Herunder kan du læse, hvilke ydelser der hører med i de forskellige pakker. 
         Husk at vejledning og rådgivning alle dage, på mail og telefon, er med i alle pakkerne. " />
 
 
@@ -140,35 +140,35 @@ export default function Products() {
           </div>
         </div>
     
-    <h3 className="centerTekst">Example Component</h3>
-    <div className="allcards">
-      <Card
-        title="EleganceEssence"
-        image={LilleKunde1} 
-        alt="Example Image"
-        underTitle="Billedeoptimering"
-        paragraph="Takket være billedoptimeringstjenesten er vores hjemmesides loadtid halveret, hvilket giver vores brugere en bedre browsingoplevelse. Nu kan vi levere vores indhold mere effektivt og imponerende."
-      />
-      <Card
-        title="LAMBOK"
-        image={LilleKunde2}
-        alt="Example Image"
-        underTitle="Designoptimering"
-        paragraph="
-        Vi er begejstrede for vores nye hjemmeside! Trafikken er steget, kunderne er glade, og vores brand er styrket. Nu matcher vores online tilstedeværelse vores virksomhedsidentitet perfekt."
-      />
-      <Card
-        title="BOHO Blomster"
-        image={LilleKunde3}
-        alt="Example Image"
-        underTitle="Rebranding"
-        paragraph="
-        Vores rebranding styrker vores bæredygtige engagement og brand. At skabe en positiv indvirkning på miljøet fylder mig med stolthed og glæde. Det er fantastisk at være en del af denne rejse mod en mere bæredygtig fremtid."
-      />
+          <h3 className="centerTekst">Example Component</h3>
+          <div className="allcards">
+            <Card
+              title="EleganceEssence"
+              image={LilleKunde1} 
+              alt="Example Image"
+              underTitle="Billedeoptimering"
+              paragraph="Takket være billedoptimeringstjenesten er vores hjemmesides loadtid halveret, hvilket giver vores brugere en bedre browsingoplevelse. Nu kan vi levere vores indhold mere effektivt og imponerende."
+            />
+            <Card
+              title="LAMBOK"
+              image={LilleKunde2}
+              alt="Example Image"
+              underTitle="Designoptimering"
+              paragraph="
+              Vi er begejstrede for vores nye hjemmeside! Trafikken er steget, kunderne er glade, og vores brand er styrket. Nu matcher vores online tilstedeværelse vores virksomhedsidentitet perfekt."
+            />
+            <Card
+              title="BOHO Blomster"
+              image={LilleKunde3}
+              alt="Example Image"
+              underTitle="Rebranding"
+              paragraph="
+              Vores rebranding styrker vores bæredygtige engagement og brand. At skabe en positiv indvirkning på miljøet fylder mig med stolthed og glæde. Det er fantastisk at være en del af denne rejse mod en mere bæredygtig fremtid."
+            />
+
+          </div>
 
     </div>
-
-  </div>
 
         </>
     )

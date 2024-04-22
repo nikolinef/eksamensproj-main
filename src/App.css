@@ -7,6 +7,21 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.loadingscreen{
+  background-color: #40432D;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingscreen iframe{
+  height: 80dvh;
+  width: 100dvw;
+  padding: 2%;
+  background-color: #412F26;
+}
+
 .centerTekst h1 {
   font-size: 40pt;
 }
@@ -122,7 +137,7 @@ nav{
 
 .menu{
   display: flex;
-  width: 35dvw;
+  width: 42dvw;
   justify-content: space-between;
 
 }
