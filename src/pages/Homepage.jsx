@@ -17,7 +17,7 @@ export default function Homepage() {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
-        }, 5500)
+        }, 6000)
     }, []);
 
     return (
