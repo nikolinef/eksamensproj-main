@@ -65,6 +65,7 @@ export default function Homepage() {
 
         <Carousel />
 
+        <Centertekst overskrift="Google lighthouse test" brodtekst="Her kan du se hvad vores website scoore i Google lighthouses test af performance." />
         <ECO />
         
     </div>
