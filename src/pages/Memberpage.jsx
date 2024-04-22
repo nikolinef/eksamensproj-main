@@ -2,29 +2,29 @@ import Folderdescribtion from "../components/Folderdescribtion";
 import folderarrow from "../assets/folderpilned.svg";
 import MedarbejderKasser from "../components/MedarbejderKasser";
 import { useNavigate } from "react-router-dom";
-import { signOut } from "firebase/auth";
+import { signOut } from "firebase/auth"; //sigOut og auth er "funktioner" firebase levere, så vi kan bruge dem
 import { auth } from "../Firebaseswd";
-import { useAuthState } from "react-firebase-hooks/auth";
+import { useAuthState } from "react-firebase-hooks/auth"; //kræver at man skriver: "npm install --save react-firebase-hooks" i terminalen. 
 import { useEffect } from "react";
 
 export default function Memberpage() {
 
-  const userInSession = sessionStorage.getItem('user');
-  const navigate = useNavigate();
-  const [user, loading] = useAuthState(auth);
+  const userInSession = sessionStorage.getItem('user'); //henter brugeroplysninger vi lavede i firebase
+  const navigate = useNavigate(); //useNavigate skal bruges, når vi vil have functionerne til at skifte fra side til side. useNavigate kommer fra App.jsx
+  const [user, loading] = useAuthState(auth); // Bruger useAuthState-hooket fra react-firebase-hooks til at få brugerens autentificeringsstatus
 
   useEffect(() => {
-    if (loading) return;
-    if (!user) return navigate("/login");
-  }, [user, loading, navigate]);
+    if (loading) return; //hvis den stadig loader sker der ikke noget
+    if (!user) return navigate("/login"); //Hvis medarbejderne ikke er logget ind, sendes de til login-siden
+  }, [user, loading, navigate]); //
 
-  async function handleLogout() {
+  async function handleLogout() { //logud funktion
     try {
-      await signOut(auth);
-      sessionStorage.removeItem('user');
-      navigate("/login");
-    } catch (error) {
-      console.error(error);
+      await signOut(auth); //signOut er en firebasefunktion
+      sessionStorage.removeItem('user'); //fjerne brugeroplysninger, så firebase kan se, ingen er logget ind. 
+      navigate("/login"); //kommer tilbage til login-siden, hvis man logger ud
+    } catch (error) { 
+      console.error(error); //konsollen fanger fejl, hvis de opstår under logud. 
     }
   }
 
@@ -106,10 +106,10 @@ export default function Memberpage() {
           </div>
         </div>
 
-        <p>Logget på som {user && userInSession && user.email}</p>
-        <button onClick={handleLogout}>Log ud</button>
+        <p>Logget på som {user && userInSession && user.email}</p> 
+        <button onClick={handleLogout}>Log ud</button> 
 
       </div>
     </>
-  );
-}
+  ); //linje 109 og 110 så medarbejderne kan logge ud igen.
+} //kopiret fra mortens kode i undervisning d. 11.-15. marts 
