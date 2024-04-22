@@ -12,12 +12,12 @@ import React, { useEffect, useState } from "react";
 export default function Homepage() {
 
     const [loading, setLoading] = useState(false);
-
-    useEffect(() => {
+    //funktion til screenload 
+    useEffect(() => { //sætter en tid, når tiden er gået fjernes det
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
-        }, 6000)
+        }, 6000) //6 sekunder
     }, []);
 
     return (
