@@ -1,35 +1,39 @@
 import React, {useState} from "react";
 import "../App.css";
-import { db, ref, push } from '../Firebaseswd';
+import { db, ref, push } from '../Firebaseswd'; 
 
-const Costumerrequest =() => {
-  const [name, setName] = useState("");
+//Vi har fået hjælp af Majed og ellers er koden fra denne YT-video: https://youtu.be/RKj3OjgftXc?si=pwW34SR38P7M75J- (sidst set d. 22/4)
+
+const Costumerrequest =() => { //håndterer indsendelse af kundeanmodninger
+  const [name, setName] = useState(""); //så data fra inputfelterne i formularen kan defineres
   const [email, setEmail] = useState("");
   const [mobilnummer, setMobilnummer] = useState("");
   const [message, setMessage] = useState("");
 
-  const [loader, setLoader] = useState(false);
+  const [loader, setLoader] = useState(false); // Loader-state, der angiver, om der udføres en handling (f.eks. dataoverførsel til Firebase).
 
+  // Funktionen handleSubmit, der kaldes, når formularen indsendes.
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoader(true);
+    setLoader(true); // Aktiverer loaderen for at vise, at en handling udføres.
 
-    push(ref(db, 'contacts'), {
+    push(ref(db, 'contacts'), {  // Pusher dataene til Firebase-databasen under 'contacts'-referencepunktet.
       name: name,
       email: email,
       mobilnummer: mobilnummer,
       message: message, 
     })
 
-    .then(() => {
+    .then(() => { // Hvis dataoverførslen lykkes, vises en bekræftelsesbesked som en alert, og loaderen slås fra.
       setLoader(false);
       alert("Tak for din forespørgsel, vi kontakter dig snarest muligt");
     })
-    .catch((error) => {
+    .catch((error) => { // Hvis der opstår en fejl under dataoverførslen, vises en fejlbesked, og loaderen slås fra.
       alert(error.message);
       setLoader(false);
     });
 
+     // Nulstiller værdierne af inputfelterne i formularen.
     setName("");
     setEmail("");
     setMobilnummer("");

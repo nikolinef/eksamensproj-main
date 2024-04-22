@@ -11,6 +11,7 @@ import React, { useEffect, useState } from "react";
 
 export default function Homepage() {
 
+    //screenloading kode er fra YT-video: https://youtu.be/SR8755C0bME?si=KqKUEtwv4u4XyVlx (sidst set d. 22/4) 
     const [loading, setLoading] = useState(false);
     //funktion til screenload 
     useEffect(() => { //sætter en tid, når tiden er gået fjernes det
