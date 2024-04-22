@@ -354,6 +354,10 @@ nav{
   max-width: 15%; 
 }
 
+iframe{ 
+  border: none;
+}
+
 
 /****** CAROUSEL *****/
 .carousel-section {
