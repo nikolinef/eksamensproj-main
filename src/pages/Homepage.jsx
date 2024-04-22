@@ -15,10 +15,10 @@ export default function Homepage() {
 
 
         <div className="velkomst">
-            <Centertekst overskrift="Velkommen til Evergreen" brodtekst="Vi er eksperter i webdesign med fokus på at skabe miljøvenlige hjemmesider, der reducerer CO2-udledningen. Lad os sammen bygge digitale løsninger, der gavner både din virksomhed og vores planet!" />
+            <Centertekst overskrift="Velkommen til Evergreen" brodtekst="Her kan du blive klogere på bæredygtig webdesign og få hjælp til at implementere tiltag der optimere dit website" />
         </div>
 
-        <Centertekst overskrift="Hvem er Evergreen" brodtekst="Evergreen forener æstetik med bæredygtighed. Vi skaber fængende webgrafiske løsninger, der oplyser om bæredygtighedens vigtighed. Vores mission er at minimere CO2-aftrykket ved at udvikle brugervenlige og visuelt appellerende webløsninger. Vi tror på ærlighed og gennemsigtighed og viser, at bæredygtige webdesigns kan være både smukke og effektive." />
+        <Centertekst overskrift="Hvem er Evergreen?" brodtekst="Evergreen forener æstetik med optimerede websites. Vores mission er at minimere CO2-aftrykket ved udvikling af brugervenlige og visuelt appellerende webløsninger. Samtidig vil vi dele vores erfaring og viden, så andre kan lade sig inspirere" />
 
         <Leasbtn link="/about">Læs mere</Leasbtn>
 
@@ -61,7 +61,7 @@ export default function Homepage() {
         />
         <Leasbtn link="/about">Læs mere</Leasbtn>
 
-        <h2 className="underOverskrift">Vores tidliger kunder</h2>
+        <h2 className="underOverskrift">Vores tidligere kunder</h2>
 
         <Carousel />
 

@@ -14,7 +14,7 @@ export default function About() {
         <Stortlogo />
 
         <div className="leftTekst">
-            <h2 className="leftTekst">Hvem er Evergreen</h2>
+            <h2 className="leftTekst">Hvem er Evergreen?</h2>
             <p className="leftTekst">
                 Evergreen er meget mere end et webbureau. Vi er fortalere for bæredygtighed og æstetik. Vores mission er at skabe fængende webgrafiske løsninger, der ikke kun imponerer, men også belyser vigtigheden af bæredygtighed. Vi tror på at oplyse og skabe opmærksomhed om klimakonsekvenserne, som internettet skaber.
                 <br /> <br />
