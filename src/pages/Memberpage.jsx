@@ -1,8 +1,33 @@
 import Folderdescribtion from "../components/Folderdescribtion";
 import folderarrow from "../assets/folderpilned.svg";
 import MedarbejderKasser from "../components/MedarbejderKasser";
+import { useNavigate } from "react-router-dom";
+import { signOut } from "firebase/auth";
+import { auth } from "../Firebaseswd";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { useEffect } from "react";
 
 export default function Memberpage() {
+
+  const userInSession = sessionStorage.getItem('user');
+  const navigate = useNavigate();
+  const [user, loading] = useAuthState(auth);
+
+  useEffect(() => {
+    if (loading) return;
+    if (!user) return navigate("/login");
+  }, [user, loading, navigate]);
+
+  async function handleLogout() {
+    try {
+      await signOut(auth);
+      sessionStorage.removeItem('user');
+      navigate("/login");
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   return (
     <>
       <div className="baggrund">
@@ -80,6 +105,9 @@ export default function Memberpage() {
             <Folderdescribtion />
           </div>
         </div>
+
+        <p>Logget på som {user && userInSession && user.email}</p>
+        <button onClick={handleLogout}>Log ud</button>
 
       </div>
     </>
