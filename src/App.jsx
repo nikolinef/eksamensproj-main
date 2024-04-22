@@ -15,7 +15,8 @@ import { auth } from './Firebaseswd';
 
 function App() {
 // Sætter en eventlistener for at registrerer, når brugeren lukker
-    // browseren/fanebladet. Hvis det sker, logges brugeren ud.
+    // browseren/fanebladet. Hvis det sker, logges brugeren ud. 
+    //en useeffect koppiret fra Mortens kode i undervisning d. 11.-15. marts 
 useEffect(() => {
   async function handleTabClose() {
     await signOut(auth);
