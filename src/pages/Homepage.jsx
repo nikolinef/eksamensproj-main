@@ -30,7 +30,7 @@ export default function Homepage() {
             <div className="baggrund">
 
                 <div className="velkomst">
-                    <Centertekst overskrift="Velkommen til Evergreen" brodtekst="Her kan du blive klogere på bæredygtig webdesign og få hjælp til at implementere tiltag der optimere dit website" />
+                    <Centertekst overskrift="Velkommen til Evergreen" brodtekst="Her kan du blive klogere på hvordan internettet og hjemmesider påvirker klimaet" />
                 </div>
 
                 <Centertekst overskrift="Hvem er Evergreen?" brodtekst="Evergreen forener æstetik med optimerede websites. Vores mission er at minimere CO2-aftrykket ved udvikling af brugervenlige og visuelt appellerende webløsninger. Samtidig vil vi dele vores erfaring og viden, så andre kan lade sig inspirere" />
