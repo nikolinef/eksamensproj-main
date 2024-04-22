@@ -1,0 +1,528 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.centerTekst h1 {
+  font-size: 40pt;
+}
+
+#MedarbejderH {
+  padding: 5% 0;
+  font-size: 40pt;
+}
+
+
+.baggrund {
+  background-color: #40432D;
+  padding-bottom: 5%;
+}
+
+.overskrift {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #EDE1D2;
+}
+
+.underOverskrift {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding: 5% 0 2% 0;
+  color: #EDE1D2;
+}
+
+.velkomst {
+  padding: 8% 0;
+}
+
+.velkomst p {
+  font-size: 20pt;
+}
+
+/***** CENTER TEKST ****/
+.centerTekst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  margin: auto;
+
+  background-color: #40432D;
+  color: #EDE1D2;
+}
+
+.centerTekst h1, p {
+  padding-bottom: 2%;
+  text-align: center;
+  width: 60%;
+}
+
+
+/****** VENSTRE TEKST *****/
+
+.leftTekst {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left along the main axis */
+  align-items: flex-start; /* Align items to the top along the cross axis */
+  text-align: left;
+  flex-direction: column;
+  margin: auto;
+  width: 70%;
+  background-color: #B9C186;
+  color: #412F26;
+  padding: 2% 0;
+  border-radius: 25px;
+  margin-bottom: 2%;
+}
+
+.leftTekst h2 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.leftTekst a{
+  color: #412F26;
+  text-decoration: none;
+}
+.leftTekst a:hover{
+  text-decoration: underline;
+}
+
+
+/****** NAVBAR *******/
+
+nav{
+  background-color: #B9C186;
+  height: 15dvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5dvw;
+}
+
+.headerlogo{
+  height: 10dvh;
+  display: flex;
+  align-items: center;
+}
+
+.headerimg{
+  height: 100%;
+}
+
+.menu{
+  display: flex;
+  width: 35dvw;
+  justify-content: space-between;
+
+}
+
+.NavLink{
+  font-size: larger;
+  color: #412F26;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.NavLink:hover{
+  text-decoration: underline;
+}
+
+      /*-----------Styles til Folders------ */
+.baacolum{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.twocolums{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.onefolder{ /*yderste kasse af folders*/
+  display: flex;
+  flex-direction: column;
+  padding: 5dvh 10dvw 2dvh 10dvw;
+  
+}
+
+.folderheadline{
+  display: flex;
+  justify-content: space-between;
+}
+
+.folderheadline h2{
+  font-size: 25pt;
+}
+
+.folderarrow{
+  height: 5dvh;
+  transition: transform 0.5s ease-in;
+  cursor: pointer;
+}
+
+.foldercontent{
+  max-height: auto; /* 7dvh content showing når folder lukket*/
+  transition: max-height 1.4s ease;
+}
+
+.foldercontent li{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  list-style-type: disc;
+}
+
+.foldercontent p{
+  padding-top: 2dvh;
+  text-align: left;
+}
+
+.foldercontent a{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #EDE1D2;
+  text-decoration: none;
+}
+
+.foldercontent a:hover{
+  color: #412F26;
+  text-decoration: underline;
+}
+
+.onefolder.active .foldercontent{
+  max-height: 100dvh;
+}
+
+.onefolder.active .folderarrow{
+  transform: rotate(180deg);
+}
+
+
+/******** CARDS CSS *****/
+
+.allcards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  gap: 50px;
+
+  margin: auto;
+  padding: 2% 0;
+}
+
+.card {
+  width: 30%;
+
+  background-color: #B9C186;
+  color: #412F26;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  
+  
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.card p, h5 {
+  padding: 10px 0;
+}
+
+.card img {
+  border-radius: 25px;
+}
+
+/****** FOOTER CSS *****/
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #B9C186;
+  color: #412F26;
+  padding: 10px 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.somelinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footerlogo {
+  height: 100px;
+  width: 100px;
+}
+
+
+/***** KNAPPER ***/
+
+.leasbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 10%;
+  padding: 5px 0;
+  border-radius: 25px;
+  background-color: #CBB89D;
+  transition: width 0.5s, height 0.5s, transform 0.5s; 
+}
+
+.leasbtn a {
+  text-decoration: none;
+  color: #412F26;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.leasbtn:hover {
+  transform: scale(1.3); 
+}
+
+
+.Bookbtn {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center; 
+  margin-top: 20px;
+  width: 12%;
+  padding: 5px 0;
+  border-radius: 25px;
+  background-color: #CBB89D;
+  transition: width 0.5s, height 0.5s, transform 0.5s; 
+  margin-bottom: 1%;
+}
+
+.Bookbtn a {
+  text-decoration: none;
+  color: #412F26;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: auto;
+}
+
+.Bookbtn:hover {
+  transform: scale(1.3); 
+}
+
+
+
+/***** FUN FACTS *****/
+
+.funfact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4% 0 0 0;
+  color: #EDE1D2;
+}
+
+
+/****** STORT LOGO ****/
+
+.stortLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0;
+}
+
+.stortLogo img {
+  max-width: 15%; 
+}
+
+
+/****** CAROUSEL *****/
+.carousel-section {
+  position: relative; 
+  width: 70%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.carousel-container {
+  position: relative; 
+}
+
+.img-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#venstrepil, #højrepil {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#venstrepil {
+  left: 0;
+  transform: rotate(90deg);
+  width: 8%;
+}
+
+#højrepil {
+  right: 0;
+  transform: rotate(-90deg);
+  width: 8%;
+}
+
+/***** ECO GRADER ***/
+
+
+.Ecograder img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 5%;
+  width: 70%;
+}
+
+/***** FAQ ***/
+.FAQ{
+  background-color: #CBB89D;
+  color: #412F26;
+  border-radius: 25px;
+  padding: 1%;
+}
+
+.faquestion{
+  display: flex;
+  justify-content: space-between;
+}
+
+/***** Costumerrequest ***/
+.costumerrequest label{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.costumerrequest input{
+  padding: 1%;
+  background-color: #CBB89D;
+  color: #412F26;
+  border-radius: 25px;
+  border-style: none;
+  /*
+  border-style: solid;
+  border-width: 2px;
+  border-color: #412F26;
+  */
+  width: 35%;
+}
+
+.costumerrequest textarea{
+  padding: 1%;
+  background-color: #CBB89D;
+  color: #412F26;
+  border-radius: 25px;
+  border-style: none;
+  /*
+  border-style: solid;
+  border-width: 2px;
+  border-color: #412F26;
+  */
+  width: 60%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.subBtn{
+  border-style: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 20px;
+  width: 10%;
+  padding: 5px 0;
+  border-radius: 25px;
+  background-color: #CBB89D;
+  color: #412F26;
+  transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+
+.subBtn:hover {
+  transform: scale(1.3); 
+}
+
+
+/******** MEDARBEJDER SIDE ***/
+
+.MedarbejderKasse {
+  background-color: #CBB89D;
+  width: 50%;
+  padding: 2% 0;
+  margin: 0 auto; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  border-radius: 25px;
+}
+
+.MedarbejderKasseIndhold {
+  width: 80%;
+  display: flex; 
+  align-items: center;
+}
+
+.MedarbejderInfo {
+  flex: 1; 
+  padding: 8px;
+  margin-right: 10px; 
+  border-radius: 4px;
+  background-color: #EDE1D2;
+  border-radius: 25px;
+  color: #412F26;
+}
+
+.MedarbejderKasseIndhold button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #EDE1D2;
+  color: #412F26;
+  cursor: pointer;
+  border: #412F26 solid 3px;
+  border-radius: 25px;
+}
+
+.MedarbejderKasseIndhold button:hover {
+  background-color: #412F26;
+  color: #EDE1D2;
+}
+
+.MedarbejderKasseIndhold img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; 
+}
+
+.PilOp {
+  transform: rotate(180deg);
+}
+
