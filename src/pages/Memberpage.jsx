@@ -107,7 +107,7 @@ export default function Memberpage() {
         </div>
 
         <p>Logget på som {user && userInSession && user.email}</p> 
-        <button onClick={handleLogout}>Log ud</button> 
+        <button onClick={handleLogout} className="subBtn">Log ud</button> 
 
       </div>
     </>
