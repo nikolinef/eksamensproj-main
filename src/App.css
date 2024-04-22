@@ -568,22 +568,7 @@ iframe{
   border-color: #412F26;
   */
   width: 25%;
+  margin: 1%;
 }
 
-.login-button{
-  border-style: none;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  margin: auto;
-  margin-top: 20px;
-  width: 10%;
-  padding: 5px 0;
-  border-radius: 25px;
-  background-color: #CBB89D;
-  color: #412F26;
-  transition: width 0.5s, height 0.5s, transform 0.5s;
-}
 
-.login-button:hover {
-  transform: scale(1.3); 
-}
