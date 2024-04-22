@@ -25,8 +25,9 @@ export default function LogIn() {
     }
 
     return (
-        <div>
-            <h1>Medarbejder login</h1>
+        <div className="baggrund">
+            <h1 className="underOverskrift">Medarbejder login</h1>
+
             <form onSubmit={handleSubmit} className='login-form'>
                 <input
                     type="email"
