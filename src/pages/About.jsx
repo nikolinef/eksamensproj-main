@@ -257,6 +257,9 @@ export default function About() {
             <br />
             <a href="https://taenk.dk/forbrugerliv/baeredygtighed/saa-meget-paavirker-dit-internetforbrug-klimaet" target="_blank" rel="noopener">https://taenk.dk/forbrugerliv/baeredygtighed/saa-meget-paavirker-dit-internetforbrug-klimaet</a>
             <br />
+            <a href="https://www.zdnet.com/article/google-heres-why-dark-mode-massively-extends-your-oled-phones-battery-life/" target="_blank" rel="noopener" >https://www.zdnet.com/article/google-heres-why-dark-mode-massively-extends-your-oled-phones-battery-life/</a>
+            <br />
+            <a href="https://dodonut.com/blog/how-sustainable-website-can-cut-costs-and-boost-profits/" target="_blank" rel="noopener" >https://dodonut.com/blog/how-sustainable-website-can-cut-costs-and-boost-profits/</a>
             <br />
           </div>
 
