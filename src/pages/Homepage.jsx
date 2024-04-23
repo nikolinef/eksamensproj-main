@@ -66,14 +66,15 @@ export default function Homepage() {
 
                 <Funfact
                     overskrift="Dark mode"
-                    brodtekst="Dark mode eller mørke hjemmesider er mere bæredygtige af flere årsager. Mørke baggrunde kræver mindre energi at vise på skærmen, hvilket resulterer i lavere energiforbrug, især på enheder med OLED- eller AMOLED-skærme. Den reducerede energiforbrug fører også til længere batterilevetid på batteridrevne enheder som smartphones og bærbare computere. Derudover reducerer mørke baggrunde øjenbelastning og træthed, samtidig med at de producerer mindre varme under brug. Alt i alt kan brugen af dark mode bidrage til en mere bæredygtig brugeroplevelse og reducere det samlede energiforbrug i forbindelse med visning af hjemmesider."
+                    brodtekst="
+                    Mørke baggrunde kræver mindre energi at vise på skærmen, hvilket resulterer i lavere energiforbrug, især på enheder med OLED- eller AMOLED-skærme. Den reducerede energiforbrug fører også til længere batterilevetid på batteridrevne enheder som smartphones og bærbare computere. Derudover reducerer mørke baggrunde øjenbelastning og træthed, samtidig med at de producerer mindre varme under brug. Alt i alt kan brugen af dark mode bidrage til mindre energiforbrug i forbindelse med visning af hjemmesider."
                 />
                 <Leasbtn link="/about">Læs mere</Leasbtn>
 
                 <Funfact
                     overskrift="Letter hjemmesider"
                     brodtekst="
-                    Lette websider er ikke kun godt for planeten, men de skaber også glade brugere. Bæredygtigt webdesign handler om at reducere filstørrelsen på hjemmesider, hvilket ikke kun bidrager til at skære ned på CO2-udledningen, men også resulterer i hurtigere indlæsningstider. Når hjemmesider indlæses hurtigt, oplever brugerne en mere gnidningsfri browsingoplevelse, hvilket igen fører til større tilfredshed og glæde. Så ved at designe med bæredygtighed for øje, kan vi ikke kun gøre vores planet gladere, men også vores brugere!"
+                    Lette websider er ikke kun godt for planeten, men de skaber også glade brugere. Vores webdesigns handler om at reducere filstørrelsen på hjemmesider, hvilket ikke kun bidrager til at skære ned på CO2-udledningen, men også resulterer i hurtigere indlæsningstider. Når hjemmesider indlæses hurtigt, oplever brugerne en mere gnidningsfri browsingoplevelse, hvilket igen fører til større tilfredshed og glæde. Så ved at designe med naturen for øje, kan vi ikke kun gøre vores planet gladere, men også vores brugere!"
                 />
                 <Leasbtn link="/about">Læs mere</Leasbtn>
 
