@@ -14,7 +14,7 @@ export default function Footer() {
                     <li>Ringvej syd 104</li>
                     <li>8260 Viby J</li>
                     <br />
-                    <li>Tlf.: 00 00 00 00</li>
+                    <li>Tlf.: 99 88 77 66</li>
                     <li>E-mail: info@evergreen.dk</li>
                     <li>CVR.: 12 34 56 78</li>
                 </ul>

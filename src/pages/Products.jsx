@@ -106,7 +106,7 @@ export default function Products() {
           <div className="foldercontent">
             <Folderdescribtion
             fdescribtion="Her får du hele pakken!
-            Vi går all in og optimere dit website på alle parameter vi ved er mulige. 
+            Vi går all in og optimerer dit website på alle parameter vi ved er mulige. 
             Det er til virksomheder, der godt kunne bruge en rebranding i den mere miljøvenlige retning. "
             />
             <p>

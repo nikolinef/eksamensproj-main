@@ -75,10 +75,10 @@ export default function About() {
 
           <div className="foldercontent">
             <p>
-            Informations arkitektur og user experience er væsentlige faktorer for at optimere websitet. - Bæredygtigt eller ej.
+            Informationsarkitektur og user experience er væsentlige faktorer for at optimere websitet. - Bæredygtigt eller ej.
             <br />
             <br />
-            En simpel og logisk informations arkitektur kan gøre det nemmere og hurtigere for brugerne at opnå deres user goals på sitet.
+            En simpel og logisk informationsarkitektur kan gøre det nemmere og hurtigere for brugerne at opnå deres user goals på sitet.
             <br />
             I sammenhæng med strømforbrug er det bedst at brugerne bruger mindst mulig tid på websitet. 
             Det gøres ved at reducere indholdet til det absolut mest nødvendige og bruge let forståelig kommunikation.
@@ -137,7 +137,7 @@ export default function About() {
           </div>
 
           <div className="foldercontent">
-            <p>Først af det værd at overveje formålet med de visuelle medier, så de ikke tager unødvendigt plads. 
+            <p>Først er det værd at overveje formålet med de visuelle medier, så de ikke tager unødvendigt plads. 
             <br />
             <br />
             Med optimering af koden, skal filstørrelserne for billeder og video også gøres så små som muligt. Det kan man gøre ved at eksportere medierne i de rigtige filformater. 

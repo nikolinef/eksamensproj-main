@@ -51,12 +51,12 @@ export default function Homepage() {
             <br />
             <FAQ 
             question="Hvad koster pakkerne?"
-            answer="Vi kan ikke sætte en fast pris på vores pakker da, da variationen af vores arbejde er meget forskellige fra kunde til kunde."
+            answer="Vi kan ikke sætte en fast pris på vores pakker, da variationen af vores arbejde er meget forskellige fra kunde til kunde."
             />
             <br />
             <FAQ 
             question="Hvordan kontakter jeg Evergreen uden for kontortid?"
-            answer="Til vores samtaler, får du nummeret på vores hotline, hvor vil vil prøve at hjælpe med akutteproblemer."
+            answer="Til vores samtaler, får du nummeret på vores hotline, hvor vi vil prøve at hjælpe med akutteproblemer."
             />
             <br />
             <FAQ 
@@ -87,7 +87,7 @@ export default function Homepage() {
 
           <div className="foldercontent">
             <Folderdescribtion
-            fdescribtion="Har du spørgsmål til fx vores implementeringsguide for CO2 reducerende tiltag, eller kan du alligevel ikke finde svar i vores FAQ, er du velkommen til at kontakte os."
+            fdescribtion="Har du spørgsmål til vores implementeringsguide for CO2 reducerende tiltag, eller kan du ikke finde svar i vores FAQ, er du velkommen til at kontakte os."
             />
             <Vejledningstid />
 

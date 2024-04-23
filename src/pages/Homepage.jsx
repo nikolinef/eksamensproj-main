@@ -46,21 +46,21 @@ export default function Homepage() {
                     image={forsideeksempel1} // 300x200px
                     alt="Example Image"
                     underTitle="Billedeoptimering"
-                    paragraph="Hos Evergreen har vi forståelse for, at den komplette omstilling kan virke uoverskuelig. Derfor har vi lavet en pakke, hvor vi komprimere visuelle medier og opdatere koden, samt sletter gammelt ubrugeligt kode."
+                    paragraph="Hos Evergreen har vi forståelse for, at den komplette omstilling kan virke uoverskuelig. Derfor har vi lavet en pakke, hvor vi komprimerer visuelle medier og opdaterer koden, samt sletter gammelt ubrugeligt kode."
                 />
                     <Card
                     title="Pakke 2"
                     image={forsideeksempel2}
                     alt="Example Image"
                     underTitle="Designoptimering"
-                    paragraph="Med designoptimering tilføjer vi et nyt design, der mindsker energiforbruget, samt opdater koden og komprimere visuelle medier. Denne pakke er populær, fordi vi bevare dit brand og identitet."
+                    paragraph="Med designoptimering tilføjer vi et nyt design, der mindsker energiforbruget, samt opdater koden og komprimerer visuelle medier. Denne pakke er populær, fordi vi bevarer dit brand og identitet."
                 />
                     <Card
                     title="Pakke 3"
                     image={forsideeksempel3}
                     alt="Example Image"
                     underTitle="Rebranding"
-                    paragraph="Her får du hele pakken! Vi går all in og optimere dit website på alle parameter vi ved er mulige. Det er til virksomheder, der godt kunne bruge en rebranding i den mere miljøvenlige retning."
+                    paragraph="Her får du hele pakken! Vi går all in og optimerer dit website på alle parameter vi ved er mulige. Det er til virksomheder, der godt kunne bruge en rebranding i den mere miljøvenlige retning."
                 />
                 </div> 
 
@@ -71,7 +71,7 @@ export default function Homepage() {
                 <Leasbtn link="/about">Læs mere</Leasbtn>
 
                 <Funfact
-                    overskrift="Letter hjemmesider"
+                    overskrift="Lettere hjemmesider"
                     brodtekst="
                     Lette websider er ikke kun godt for planeten, men de skaber også glade brugere. Bæredygtigt webdesign handler om at reducere filstørrelsen på hjemmesider, hvilket ikke kun bidrager til at skære ned på CO2-udledningen, men også resulterer i hurtigere indlæsningstider. Når hjemmesider indlæses hurtigt, oplever brugerne en mere gnidningsfri browsingoplevelse, hvilket igen fører til større tilfredshed og glæde. Så ved at designe med bæredygtighed for øje, kan vi ikke kun gøre vores planet gladere, men også vores brugere!"
                 />
