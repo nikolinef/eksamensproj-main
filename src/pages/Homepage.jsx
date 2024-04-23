@@ -74,7 +74,7 @@ export default function Homepage() {
                 <Funfact
                     overskrift="Letter hjemmesider"
                     brodtekst="
-                    Lette websider er ikke kun godt for planeten, men de skaber også glade brugere. Vores webdesigns handler om at reducere filstørrelsen på hjemmesider, hvilket ikke kun bidrager til at skære ned på CO2-udledningen, men også resulterer i hurtigere indlæsningstider. Når hjemmesider indlæses hurtigt, oplever brugerne en mere gnidningsfri browsingoplevelse, hvilket igen fører til større tilfredshed og glæde. Så ved at designe med naturen for øje, kan vi ikke kun gøre vores planet gladere, men også vores brugere!"
+                    Lette websider er ikke kun godt for planeten, men de skaber også glade brugere. Vores webdesign handler om at reducere filstørrelsen på hjemmesider, hvilket ikke kun bidrager til at skære ned på CO2-udledningen, men også resulterer i hurtigere indlæsningstider. Når hjemmesider indlæses hurtigt, oplever brugerne en mere gnidningsfri browsingoplevelse, hvilket igen fører til større tilfredshed og glæde. Design med naturen i tankerne kan ikke kun gøre vores planet gladere, men også skabe mere behagelige og bæredygtige løsninger for vores brugere."
                 />
                 <Leasbtn link="/about">Læs mere</Leasbtn>
 
