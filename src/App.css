@@ -172,7 +172,11 @@ nav{
 .baacolum{
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 37%;
+}
+
+.twocolums .baacolum p{
+  width: 100%;
 }
 
 .twocolums{
