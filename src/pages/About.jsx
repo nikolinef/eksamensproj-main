@@ -238,7 +238,6 @@ export default function About() {
           </div>
 
           <div className="foldercontent">
-            <br />
               <li>Hvis internettet var et land, ville det udlede lige så meget CO2 som det 4. mest forurenende land.</li>
               <br />
               <li>Internettet udleder mere CO2 end den kommercielle flytrafik.</li>
