@@ -47,7 +47,7 @@ export default function Products() {
             </p>
             
             <Bookbtn
-            link="/Contact"/>
+            link="/Contact#mdebook"/>
             <Beforeandafter
             image1={foereksempel1}
             alt1="Example alt"
@@ -83,7 +83,7 @@ export default function Products() {
               <li>Design af userinterface</li>
             </p>
             <Bookbtn
-            link="/Contact"/>
+            link="/Contact#mdebook"/>
             <Beforeandafter
             image1={foereksempel2}
             alt1="Example alt"
@@ -126,7 +126,7 @@ export default function Products() {
               <li>Vedligeholdelse af content</li>
             </p>
             <Bookbtn
-            link="/Contact"/>
+            link="/Contact#mdebook"/>
             <Beforeandafter
             image1={foereksempel3}
             alt1="Example alt"

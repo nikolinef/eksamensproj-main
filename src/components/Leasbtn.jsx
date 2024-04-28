@@ -1,9 +1,10 @@
 import React from 'react';
+import { HashLink } from 'react-router-hash-link'
 
 function Leasbtn({ link }) {
   return (
     <div className="leasbtn">
-      <a href={link}>Læs mere</a>
+      <HashLink to={link}>Læs mere</HashLink>
     </div>
   );
 }

@@ -231,7 +231,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="onefolder" style={{backgroundColor: "#806044", color: "#EDE1D2"}}>
+        <div className="onefolder" style={{backgroundColor: "#806044", color: "#EDE1D2"}} id="facts">
           <div className="folderheadline">
             <h2>Fun & sad facts</h2>
             <img src={folderarrow} alt="Pil" className="folderarrow" />

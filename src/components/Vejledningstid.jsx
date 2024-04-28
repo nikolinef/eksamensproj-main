@@ -12,7 +12,7 @@ function Vejledningstid() {
             </div>
 
             <div className="baacolum">
-                <h4>E-mail</h4>
+                <h4>E-mail:</h4>
                 <p>raadgivning@evergreen.dk</p>
                 <h4>Kontortid:</h4>
                 <p>Kl. 09:00-16:30 alle hverdage</p>
