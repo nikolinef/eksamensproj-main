@@ -140,7 +140,7 @@ export default function Products() {
           </div>
         </div>
     
-          <h3 className="centerTekst">Example Component</h3>
+          <h3 className="centerTekst">Eksempler fra tidligere kunder</h3>
           <div className="allcards">
             <Card
               title="EleganceEssence"

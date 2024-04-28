@@ -89,6 +89,7 @@ export default function Homepage() {
             <Folderdescribtion
             fdescribtion="Har du spørgsmål til vores implementeringsguide for CO2 reducerende tiltag, eller kan du ikke finde svar i vores FAQ, er du velkommen til at kontakte os."
             />
+            <br />
             <Vejledningstid />
 
           </div>

@@ -48,6 +48,7 @@ export default function Homepage() {
                     underTitle="Billedeoptimering"
                     paragraph="Hos Evergreen har vi forståelse for, at den komplette omstilling kan virke uoverskuelig. Derfor har vi lavet en pakke, hvor vi komprimerer visuelle medier og opdaterer koden, samt sletter gammelt ubrugeligt kode."
                 />
+
                     <Card
                     title="Pakke 2"
                     image={forsideeksempel2}

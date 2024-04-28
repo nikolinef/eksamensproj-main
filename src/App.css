@@ -104,14 +104,19 @@
   width: 70%;
   background-color: #B9C186;
   color: #412F26;
-  /*padding: 2% 0;*/
   border-radius: 25px;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
+  
 }
 
 .leftTekst h2 {
-  /*margin-bottom: 20px;*/
+  margin-top: 4%;
+  margin-bottom: 1%;
   text-align: left;
+}
+
+.leftTekst p{
+  margin-bottom: 4%;
 }
 
 .leftTekst a{
@@ -120,6 +125,7 @@
 }
 .leftTekst a:hover{
   text-decoration: underline;
+  color: #EDE1D2;
 }
 
 
@@ -210,6 +216,7 @@ nav{
 .foldercontent p{
   padding-top: 2dvh;
   text-align: left;
+  width: 60%;
 }
 
 .foldercontent a{
