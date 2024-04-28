@@ -31,7 +31,7 @@ export default function LogIn() {
             <form onSubmit={handleSubmit} className='login-form'>
                 <input
                     type="email"
-                    placeholder="Your Email"
+                    placeholder="Email"
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)} // Opdaterer værdien af email-statet med den værdi, brugeren indtaster i inputfeltet.
@@ -39,7 +39,7 @@ export default function LogIn() {
                 />
                 <input
                     type="password"
-                    placeholder="Your Password"
+                    placeholder="Password"
                     required
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}

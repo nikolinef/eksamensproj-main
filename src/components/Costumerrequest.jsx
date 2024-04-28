@@ -48,7 +48,7 @@ const Costumerrequest =() => { //håndterer indsendelse af kundeanmodninger
             <input type="text" 
             name="navn"
             value={name}
-            placeholder="Navn/firmanavn" required
+            placeholder="Lars Pilgaard" required
             onChange={(e) => setName(e.target.value)}/>
             <br />
             <br />
@@ -57,7 +57,7 @@ const Costumerrequest =() => { //håndterer indsendelse af kundeanmodninger
             <input type="number" 
             name="mobilnummer"
             value={mobilnummer}
-            placeholder="Mobilnummer" required
+            placeholder="12345678" required
             onChange={(e) => setMobilnummer(e.target.value)}/>
             <br />
             <br />
@@ -66,7 +66,7 @@ const Costumerrequest =() => { //håndterer indsendelse af kundeanmodninger
             <input type="email" 
             name="email"
             value={email}
-            placeholder="E-mail" required
+            placeholder="virksomhed@gmail.com" required
             onChange={(e) => setEmail(e.target.value)}/>
             <br />
             <br />
