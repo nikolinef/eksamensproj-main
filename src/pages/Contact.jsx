@@ -28,6 +28,7 @@ export default function Homepage() {
             <Folderdescribtion
             fdescribtion="Til mødet vil vi sammen snakke om de forskellige optimeringsmuligheder og behov, din virksomhed har, og vil fastlægge et forløb der passer jeres kalender."
             />
+            <br />
             <Costumerrequest />
             
 
