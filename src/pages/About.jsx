@@ -2,7 +2,9 @@ import folderarrow from "../assets/folderpilned.svg";
 import Stortlogo from "../components/Stortlogo";
 import Centertekst from "../components/Centertekst";
 import pageload from "../assets/pageloadevergreen.svg";
-import { Link } from "react-router-dom";
+import imgvidoptimize from "../assets/billede-videooptimering.svg";
+import facts from "../assets/factsikon.svg";
+import { Form, Link } from "react-router-dom";
 
 export default function About() {
 
@@ -74,23 +76,29 @@ export default function About() {
           </div>
 
           <div className="foldercontent">
-            <p>
-            Informationsarkitektur og user experience er væsentlige faktorer for at optimere websitet. - Bæredygtigt eller ej.
-            <br />
-            <br />
-            En simpel og logisk informationsarkitektur kan gøre det nemmere og hurtigere for brugerne at opnå deres user goals på sitet.
-            <br />
-            I sammenhæng med strømforbrug er det bedst at brugerne bruger mindst mulig tid på websitet. 
-            Det gøres ved at reducere indholdet til det absolut mest nødvendige og bruge let forståelig kommunikation.
-            <br />
-            <br />
-            Det er også med til at forbedre brugeroplevelsen, fordi brugerrejsen tager mindre tid uden frustrationer og forvirring.
-            <br />
-            <br />
-            Mængden af hver sides indhold og antallet af sider kan simplificeres. 
-            I bogen “Don’t Make Me Think! A Common Sense Approach to Web usability”, Steve Krug, bliver der pointere, at brugerne slet ikke bruger så lang tid på hjemmesider, som vi designer dem til.
-            </p>
-
+            <div>
+              <p>
+              Informationsarkitektur og user experience er væsentlige faktorer for at optimere websitet. - Bæredygtigt eller ej.
+              <br />
+              <br />
+              En simpel og logisk informationsarkitektur kan gøre det nemmere og hurtigere for brugerne at opnå deres user goals på sitet.
+              <br />
+              I sammenhæng med strømforbrug er det bedst at brugerne bruger mindst mulig tid på websitet. 
+              Det gøres ved at reducere indholdet til det absolut mest nødvendige og bruge let forståelig kommunikation.
+              <br />
+              <br />
+              Det er også med til at forbedre brugeroplevelsen, fordi brugerrejsen tager mindre tid uden frustrationer og forvirring.
+              <br />
+              <br />
+              Mængden af hver sides indhold og antallet af sider kan simplificeres. 
+              I bogen “Don’t Make Me Think! A Common Sense Approach to Web usability”, Steve Krug, bliver der pointere, at brugerne slet ikke bruger så lang tid på hjemmesider, som vi designer dem til.
+              </p>
+            </div>
+            
+            <div className="foldergraphic">
+            <iframe src="https://lottie.host/embed/ce58dd4d-0688-41d3-b82e-5cbafd29bcc8/TREKLiC6Y0.json" loading="lazy"></iframe>
+            </div>
+           
 
           </div>
         </div>
@@ -102,32 +110,40 @@ export default function About() {
           </div>
 
           <div className="foldercontent">
-            <p>
-            Optimering af IA vil automatisk også optimere din kode. 
-            Derudover skal du hele tiden sørger for at slette kode, der ikke bliver brugt, fx styles eller gamle artikler. 
-            <br />
-            <br />
-            Det er også en fordel at genbruge elementer, styles og funktioner, så serveren ikke skal loade de samme koncepter flere gang. 
-            <br />
-            <br />
-            Brug kun nødvendig tracking og aktiver det kun, når det skal bruges. At tracke brugernes data optager meget plads og overtræder deres private grænser. 
-            <br />
-            <br />
-            Blokér robotter der besøger hjemmesider for forskellige analyser. De øger loadingtiden på servere og vores hjemmeside. 
-            <br />
-            <br />
-            Lad koden være tilgængelig for alle, så vi alle kan lærer af hinanden. 
-            <br />
-            <br />
-            Undgå at bruge content management systems (CMS) som fx Wordpress uden plug-ins, fordi serveren generere filerne, hver gang nogen besøger websitet. 
-            <br />
-            <br />
-            Brug i stedet løsninger som page caching, hvor serveren generere filerne én gang pr. upload til webhotel og kopiere filerne til de næste brugere. 
-            <br />
-            <br />
-            Hvis muligt vælg også programmeringssprog, der bruger mindre energi. Et populært sprog som JavaScript er ikke det, som bruger mindst energi. 
-            </p>
+            <div>
+              <p>
+              Optimering af IA vil automatisk også optimere din kode. 
+              Derudover skal du hele tiden sørger for at slette kode, der ikke bliver brugt, fx styles eller gamle artikler. 
+              <br />
+              <br />
+              Det er også en fordel at genbruge elementer, styles og funktioner, så serveren ikke skal loade de samme koncepter flere gang. 
+              <br />
+              <br />
+              Brug kun nødvendig tracking og aktiver det kun, når det skal bruges. At tracke brugernes data optager meget plads og overtræder deres private grænser. 
+              <br />
+              <br />
+              Blokér robotter der besøger hjemmesider for forskellige analyser. De øger loadingtiden på servere og vores hjemmeside. 
+              <br />
+              <br />
+              Lad koden være tilgængelig for alle, så vi alle kan lærer af hinanden. 
+              <br />
+              <br />
+              Undgå at bruge content management systems (CMS) som fx Wordpress uden plug-ins, fordi serveren generere filerne, hver gang nogen besøger websitet. 
+              <br />
+              <br />
+              Brug i stedet løsninger som page caching, hvor serveren generere filerne én gang pr. upload til webhotel og kopiere filerne til de næste brugere. 
+              <br />
+              <br />
+              Hvis muligt vælg også programmeringssprog, der bruger mindre energi. Et populært sprog som JavaScript er ikke det, som bruger mindst energi. 
+              </p>
+            </div>
+            
+            <div className="foldergraphic">
+              <iframe src="https://lottie.host/embed/373f038b-37f8-46d4-a53d-ca5088024430/sPlogC1Cdj.json" loading="lazy"></iframe>
+            </div>
+            
           </div>
+
         </div>
 
         <div className="onefolder" style={{backgroundColor: "#806044", color: "#EDE1D2"}}>
@@ -137,42 +153,49 @@ export default function About() {
           </div>
 
           <div className="foldercontent">
-            <p>Først er det værd at overveje formålet med de visuelle medier, så de ikke tager unødvendigt plads. 
-            <br />
-            <br />
-            Med optimering af koden, skal filstørrelserne for billeder og video også gøres så små som muligt. Det kan man gøre ved at eksportere medierne i de rigtige filformater. 
-            <br />
-            <br />
-            <h4>Billeder:</h4>
-            De mest effektive filtyper for billeder er WEBP og AVIF.
-            Ellers kan man også bruge PNG til simple billeder med en lille farvepalet
-            <br />
-            <br />
-            Jo mindre variationen af farver jo mindre kan filen blive, derfor kan slørrede billeder også have effekt.
-            <br />
-            Er baggrunden irrelevant for billedets budsskab, kan man med fordel slører baggrunden.
-            <br />
-            <br />
-            For ikoner og grafik uden tekst er SVG-filen mest optimal.
-            <br />
-            <br />
-            <h4>Videoer:</h4>
-            De mest effektive filtyper for videoer er WEBM og MP4. 
-            <br />
-            Undgå store lange videoer med automatisk afspilning. Det kræver mere strøm. 
-            Derimod er det mere brugervenligt, når brugerne selv bestemmer hvornår videoen skal afspilles. Ydermere kan videoerne programmeres til lazyload, så de bruger mindre data ved loading.
-            <br />
-            <br />
-            <h4>Animationer:</h4>
-            For simpel frame by frame animation kan man bruge GIF-animation, ellers er lottie den mest effektive filtype for lidt mere avanceret animation.
-            <br />
-            <br />
-            <br />
-            Ved både video og billeder gælder at størrelsen har betydning for filstørrelsen. Dvs. 1500x1000px fylder mere end 100x70px.
-            <br />
-            <br />
-            Der findes forskellige komprimeringshjemmesider til både video og billeder, der gør filerne mindre uden kvaliteten tager skade. 
-            </p>
+            <div>
+              <p>Først er det værd at overveje formålet med de visuelle medier, så de ikke tager unødvendigt plads. 
+              <br />
+              <br />
+              Med optimering af koden, skal filstørrelserne for billeder og video også gøres så små som muligt. Det kan man gøre ved at eksportere medierne i de rigtige filformater. 
+              <br />
+              <br />
+              <h4>Billeder:</h4>
+              De mest effektive filtyper for billeder er WEBP og AVIF.
+              Ellers kan man også bruge PNG til simple billeder med en lille farvepalet
+              <br />
+              <br />
+              Jo mindre variationen af farver jo mindre kan filen blive, derfor kan slørrede billeder også have effekt.
+              <br />
+              Er baggrunden irrelevant for billedets budsskab, kan man med fordel slører baggrunden.
+              <br />
+              <br />
+              For ikoner og grafik uden tekst er SVG-filen mest optimal.
+              <br />
+              <br />
+              <h4>Videoer:</h4>
+              De mest effektive filtyper for videoer er WEBM og MP4. 
+              <br />
+              Undgå store lange videoer med automatisk afspilning. Det kræver mere strøm. 
+              Derimod er det mere brugervenligt, når brugerne selv bestemmer hvornår videoen skal afspilles. Ydermere kan videoerne programmeres til lazyload, så de bruger mindre data ved loading.
+              <br />
+              <br />
+              <h4>Animationer:</h4>
+              For simpel frame by frame animation kan man bruge GIF-animation, ellers er lottie den mest effektive filtype for lidt mere avanceret animation.
+              <br />
+              <br />
+              <br />
+              Ved både video og billeder gælder at størrelsen har betydning for filstørrelsen. Dvs. 1500x1000px fylder mere end 100x70px.
+              <br />
+              <br />
+              Der findes forskellige komprimeringshjemmesider til både video og billeder, der gør filerne mindre uden kvaliteten tager skade. 
+              </p>
+            </div>
+            
+            <div className="foldergraphic">
+              <img src={imgvidoptimize} alt="Billede og video ikoner"/>
+            </div>
+
           </div>
         </div>
 
@@ -204,6 +227,11 @@ export default function About() {
             <br />
             Oftest er brødtekst størstedelen af tekst, som alligevel skal være læsbar, hvilket mange installerede fonte er.
             </p>
+
+            <div className="foldergraphic">
+            <iframe src="https://lottie.host/embed/d085b73b-b720-4ed9-93b9-14687da4f5f0/QWP0fOXFoS.json" loading="lazy"></iframe>
+            </div>
+          
           </div>
         </div>
 
@@ -214,20 +242,27 @@ export default function About() {
           </div>
 
           <div className="foldercontent">
-            <p>
-            <h4>Websitets ydeevne:</h4>
-            Ved at teste performance kan du blive klogere på websitet hastighed. En god performance gør brugeroplevelsen bedre.
-            <br />
-            <br />
-            Hastigheden øges ved at implementere forskellige tiltag, der reducere koden (se ovenstående) og undgår unødvendig dataoverførelser. 
-            <br />
-            Performanceværktøjet Ecograder giver indsigt i websitets performance og giver forslag til forbedringer. 
-            Lighthouse kan også bruges, der også hjælper med SEO. 
-            <br />
-            <br />
-            <h4>Tracking:</h4>
-            Lav kun nødvendig tracking på dit website og brug analyseprogrammer, der ikke bruger meget strøm Fx Simple Analytics og Plausible Analytics. 
-            </p>
+            <div>
+              <p>
+              <h4>Websitets ydeevne:</h4>
+              Ved at teste performance kan du blive klogere på websitet hastighed. En god performance gør brugeroplevelsen bedre.
+              <br />
+              <br />
+              Hastigheden øges ved at implementere forskellige tiltag, der reducere koden (se ovenstående) og undgår unødvendig dataoverførelser. 
+              <br />
+              Performanceværktøjet Ecograder giver indsigt i websitets performance og giver forslag til forbedringer. 
+              Lighthouse kan også bruges, der også hjælper med SEO. 
+              <br />
+              <br />
+              <h4>Tracking:</h4>
+              Lav kun nødvendig tracking på dit website og brug analyseprogrammer, der ikke bruger meget strøm Fx Simple Analytics og Plausible Analytics. 
+              </p>
+            </div>
+            
+            <div className="foldergraphic">
+              <iframe src="https://lottie.host/embed/976cb7bb-81f5-40b4-9320-d3eeda8a14a2/mkDHBMjSDx.json" loading="lazy"></iframe>
+            </div>
+
           </div>
         </div>
 
@@ -238,6 +273,7 @@ export default function About() {
           </div>
 
           <div className="foldercontent">
+            <div>
               <li>Hvis internettet var et land, ville det udlede lige så meget CO2 som det 4. mest forurenende land.</li>
               <br />
               <li>Internettet udleder mere CO2 end den kommercielle flytrafik.</li>
@@ -249,18 +285,24 @@ export default function About() {
               <li>Hvis en bærebar computer bruges i 3 år ekstra kan det spare 3,7 mio. tons CO2 i EU.</li>
               <br />
               <li>Hvis en iphone bruges i 1 år ekstra, kan det spare 1,2 mio. tons CO2 i EU.</li>
-            
-            <br />
-            <br />
-            <h4>Kilder:</h4>
-            <a href="https://www.sustainablewebmanifesto.com/" target="_blank" rel="noopener" >https://www.sustainablewebmanifesto.com/ </a>
-            <br />
-            <a href="https://taenk.dk/forbrugerliv/baeredygtighed/saa-meget-paavirker-dit-internetforbrug-klimaet" target="_blank" rel="noopener">https://taenk.dk/forbrugerliv/baeredygtighed/saa-meget-paavirker-dit-internetforbrug-klimaet</a>
-            <br />
-            <a href="https://www.zdnet.com/article/google-heres-why-dark-mode-massively-extends-your-oled-phones-battery-life/" target="_blank" rel="noopener" >https://www.zdnet.com/article/google-heres-why-dark-mode-massively-extends-your-oled-phones-battery-life/</a>
-            <br />
-            <a href="https://dodonut.com/blog/how-sustainable-website-can-cut-costs-and-boost-profits/" target="_blank" rel="noopener" >https://dodonut.com/blog/how-sustainable-website-can-cut-costs-and-boost-profits/</a>
-            <br />
+              
+              <br />
+              <br />
+              <h4>Kilder:</h4>
+              <a href="https://www.sustainablewebmanifesto.com/" target="_blank" rel="noopener" >https://www.sustainablewebmanifesto.com/ </a>
+              <br />
+              <a href="https://taenk.dk/forbrugerliv/baeredygtighed/saa-meget-paavirker-dit-internetforbrug-klimaet" target="_blank" rel="noopener">https://taenk.dk/forbrugerliv/baeredygtighed/saa-meget-paavirker-dit-internetforbrug-klimaet</a>
+              <br />
+              <a href="https://www.zdnet.com/article/google-heres-why-dark-mode-massively-extends-your-oled-phones-battery-life/" target="_blank" rel="noopener" >https://www.zdnet.com/article/google-heres-why-dark-mode-massively-extends-your-oled-phones-battery-life/</a>
+              <br />
+              <a href="https://dodonut.com/blog/how-sustainable-website-can-cut-costs-and-boost-profits/" target="_blank" rel="noopener" >https://dodonut.com/blog/how-sustainable-website-can-cut-costs-and-boost-profits/</a>
+              <br />
+            </div>
+              
+            <div className="foldergraphic">
+              <img src={facts} alt="Infomation ikon"/>
+            </div>
+
           </div>
 
         </div>

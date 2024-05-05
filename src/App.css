@@ -208,8 +208,9 @@ nav{
 }
 
 .foldercontent{
-  max-height: auto; /* 7dvh content showing når folder lukket*/
+  max-height: 100%; /* 7dvh content showing når folder lukket*/
   transition: max-height 1.4s ease;
+  display: flex;
 }
 
 .foldercontent li{
@@ -240,6 +241,19 @@ nav{
 
 .onefolder.active .folderarrow{
   transform: rotate(180deg);
+}
+
+.foldercontent .foldergraphic{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foldergraphic iframe{
+  height: 100%;
+  width: auto;
 }
 
 
