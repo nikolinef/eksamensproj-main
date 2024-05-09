@@ -7,9 +7,8 @@ function FAQ({question, answer}) {
         <div className="FAQ">
             <div className="faquestion">
                 <h3>{question}</h3>
-                <img src={folderarrow} alt="Pil" className="folderarrow" />
             </div>
-            
+            <br />
             <div className="faqcontent">
                 <p>{answer}</p>
             </div>

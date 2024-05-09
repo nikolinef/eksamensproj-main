@@ -32,19 +32,18 @@ export default function Products() {
             <img src={folderarrow} alt="Pil" className="folderarrow" />
           </div>
 
-          <div className="foldercontent">
-            <Folderdescribtion
-            fdescribtion="Hos Evergreen har vi forståelse for, at den komplette omstilling kan virke uoverskuelig. 
-            Derfor har vi lavet en pakke, hvor vi komprimere visuelle medier og opdatere koden, samt sletter gammelt ubrugeligt kode."
-            />
-            <p>
+          <div className="packagecontent">
+            <p>Hos Evergreen har vi forståelse for, at den komplette omstilling kan virke uoverskuelig. <br />
+            Derfor har vi lavet en pakke, hvor vi komprimere visuelle medier og opdatere koden, samt sletter gammelt ubrugeligt kode.</p>
+           <br />
               <h4>Det får du med i pakken:</h4>
+              <br />
               <li>Komprimering af billeder og videoer</li>
               <br />
               <li>Optimering af kode</li>
               <br />
               <li>Simpel informationsarkitektur</li>
-            </p>
+            
             
             <Bookbtn
             link="/Contact#mdebook"/>
@@ -67,13 +66,13 @@ export default function Products() {
             <img src={folderarrow} alt="Pil" className="folderarrow" />
           </div>
 
-          <div className="foldercontent">
-            <Folderdescribtion
-            fdescribtion="Med designoptimering tilføjer vi et nyt design, der mindsker energiforbruget, samt opdater koden og komprimere visuelle medier. 
-            Denne pakke er populær, fordi vi bevare dit brand og identitet."
-            />
-            <p>
+          <div className="packagecontent">
+            <p>Med designoptimering tilføjer vi et nyt design, der mindsker energiforbruget, samt opdater koden og komprimere visuelle medier.
+            <br />
+            Denne pakke er populær, fordi vi bevare dit brand og identitet.</p>
+            <br />
             <h4>Det får du med i pakken:</h4>
+            <br />
               <li>Komprimering af billeder og videoer</li>
               <br />
               <li>Optimering af kode</li>
@@ -81,7 +80,7 @@ export default function Products() {
               <li>Simpel informationsarkitektur</li>
               <br />
               <li>Design af userinterface</li>
-            </p>
+           
             <Bookbtn
             link="/Contact#mdebook"/>
             <Beforeandafter
@@ -103,14 +102,15 @@ export default function Products() {
             <img src={folderarrow} alt="Pil" className="folderarrow" />
           </div>
 
-          <div className="foldercontent">
-            <Folderdescribtion
-            fdescribtion="Her får du hele pakken!
+          <div className="packagecontent">
+            <p>Her får du hele pakken!
+            <br />
             Vi går all in og optimerer dit website på alle parameter vi ved er mulige. 
-            Det er til virksomheder, der godt kunne bruge en rebranding i den mere miljøvenlige retning. "
-            />
-            <p>
+            <br />
+            Det er til virksomheder, der godt kunne bruge en rebranding i den mere miljøvenlige retning.</p>
+            <br />
             <h4>Det får du med i pakken:</h4>
+            <br />
               <li>Komprimering af billeder og videoer</li>
               <br />
               <li>Optimering af kode</li>
@@ -124,7 +124,7 @@ export default function Products() {
               <li>Kommunikationsstrategier</li>
               <br />
               <li>Vedligeholdelse af content</li>
-            </p>
+           
             <Bookbtn
             link="/Contact#mdebook"/>
             <Beforeandafter

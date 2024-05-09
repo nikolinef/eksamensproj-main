@@ -21,10 +21,15 @@ export default function Homepage() {
             <img src={folderarrow} alt="Pil" className="folderarrow" />
           </div>
 
-          <div className="foldercontent">
+          <div className="packagecontent">
             <Folderdescribtion
-            fdescribtion="Send en forespørgsel på et mødetidspunkt, dato og evt. sted. Vi tager rundt i hele landet for at hjælpe virksomheder. Du vil modtage en bekræftelse på at vi har fået din besked. Herefter kontakter vi dig/din virksomhed for at aftale nærmere."
+            fdescribtion="Send en forespørgsel på et mødetidspunkt, dato og evt. sted. Vi tager rundt i hele landet for at hjælpe virksomhed."
             />
+            <br />
+            <Folderdescribtion
+            fdescribtion="Du vil modtage en bekræftelse på at vi har fået din besked. Herefter kontakter vi dig/din virksomhed for at aftale nærmere."
+            />
+            <br />
             <Folderdescribtion
             fdescribtion="Til mødet vil vi sammen snakke om de forskellige optimeringsmuligheder og behov, din virksomhed har, og vil fastlægge et forløb der passer jeres kalender."
             />
@@ -41,10 +46,11 @@ export default function Homepage() {
             <img src={folderarrow} alt="Pil" className="folderarrow" />
           </div>
 
-          <div className="foldercontent">
+          <div className="packagecontent">
             <Folderdescribtion
             fdescribtion="Vi har samlet svarene på de hyppigste spørgsmål vi får:"
             />
+            <br />
             <FAQ 
             question="Hvornår får jeg svar på min forespørgsel?"
             answer="Det gør du snarest muligt. Vi bestræber os på at give svar samme dag eller arbejdsdagen efter."
@@ -74,6 +80,7 @@ export default function Homepage() {
             question="Hvem er Tom GreenWood?"
             answer="Tom Greenwood er forfatter til bogen Sustainable Web Design, og med udvikler af Sustainable Web Manifesto. Vi er inspireret og motiveret af Greenwood."
             />
+            <br />
             <Folderdescribtion
             fdescribtion="Har du stadig ikke fået svar, er du selvfølgelig velkommen til at kontakte os. Se træffetider under Rådgivning og vejledning"
             />
@@ -86,9 +93,12 @@ export default function Homepage() {
               <img src={folderarrow} alt="Pil" className="folderarrow" />
           </div>
 
-          <div className="foldercontent">
+          <div className="packagecontent">
             <Folderdescribtion
-            fdescribtion="Har du spørgsmål til vores implementeringsguide for CO2 reducerende tiltag, eller kan du ikke finde svar i vores FAQ, er du velkommen til at kontakte os."
+            fdescribtion="Har du spørgsmål til vores implementeringsguide for CO2-reducerende tiltag,"
+            />
+            <Folderdescribtion
+            fdescribtion="eller kan du ikke finde svar i vores FAQ, er du velkommen til at kontakte os."
             />
             <br />
             <Vejledningstid />

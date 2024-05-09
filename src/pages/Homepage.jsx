@@ -12,23 +12,23 @@ import React, { useEffect, useState } from "react";
 export default function Homepage() {
 
     //screenloading kode er fra YT-video: https://youtu.be/SR8755C0bME?si=KqKUEtwv4u4XyVlx (sidst set d. 22/4) 
-    const [loading, setLoading] = useState(false);
+    //const [loading, setLoading] = useState(false);
     //funktion til screenload 
-    useEffect(() => { //sætter en tid, når tiden er gået fjernes det
-        setLoading(true)
-        setTimeout(() => {
-            setLoading(false)
-        }, 6000) //6 sekunder
-    }, []);
+   // useEffect(() => { //sætter en tid, når tiden er gået fjernes det
+    //    setLoading(true)
+    //    setTimeout(() => {
+    //        setLoading(false)
+    //    }, 6000) //6 sekunder
+    //}, []);
 
     return (
         <>
-        <div className="loadingscreen">
-            {
-                loading ? (<iframe src="https://lottie.host/embed/d7e7f56d-6795-404a-9530-c92e8f7c766c/C9sRDSFZS4.json"></iframe>)
-                : (
+        {/* <div className="loadingscreen"> */}
+            {/* { loading ? (<iframe src="https://lottie.host/embed/d7e7f56d-6795-404a-9530-c92e8f7c766c/C9sRDSFZS4.json"></iframe>) */}
+                {/* : ( )} */}
+        {/* </div> */}
 
-            <div className="baggrund">
+        <div className="baggrund">
 
                 <div className="velkomst">
                     <Centertekst overskrift="Velkommen til Evergreen" brodtekst="Her kan du blive klogere på hvordan internettet og hjemmesider påvirker klimaet" />
@@ -87,8 +87,6 @@ export default function Homepage() {
                 <ECO />
             
             </div>
-              )}
-        </div>
         </>
     )
 }

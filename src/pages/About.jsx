@@ -76,7 +76,7 @@ export default function About() {
           </div>
 
           <div className="foldercontent">
-            <div>
+            <div className="describtion">
               <p>
               Informationsarkitektur og user experience er væsentlige faktorer for at optimere websitet. - Bæredygtigt eller ej.
               <br />
@@ -110,7 +110,7 @@ export default function About() {
           </div>
 
           <div className="foldercontent">
-            <div>
+            <div className="describtion">
               <p>
               Optimering af IA vil automatisk også optimere din kode. 
               Derudover skal du hele tiden sørger for at slette kode, der ikke bliver brugt, fx styles eller gamle artikler. 
@@ -153,7 +153,7 @@ export default function About() {
           </div>
 
           <div className="foldercontent">
-            <div>
+            <div className="describtion">
               <p>Først er det værd at overveje formålet med de visuelle medier, så de ikke tager unødvendigt plads. 
               <br />
               <br />
@@ -205,29 +205,31 @@ export default function About() {
             <img src={folderarrow} alt="Pil" className="folderarrow" />
           </div>
           <div className="foldercontent">
-            <p>
-            Typografi og farver har ikke kun indflydelse på visuelt kommunikation og identitet. Det har også effekt på strømforbruget.
-            <br />
-            <br />
-            <h4>Farver:</h4>
-            I dag består mange skærme af små OLED lamper for hver pixel, hvor hvid lyser kraftigst og ved helt sort er lamperne slukket.
-            <br />
-            <br />
-            Derfor bruges der også mere strøm, når lamperne lyser på deres kraftigste, og man kan med fordel ændre sit interface til dark mode, hvor det er muligt.
-            <br />
-            Ellers kan man med fordel også bruge mørke variationer af varme nuancer.
-            <br />
-            <br />
-            Af en uforklarlig årsag bruger blå nuancer også meget strøm.
-            <br />
-            <br />
-            <h4>Typografi:</h4>
-            Alle computere har forskellige fonte installeret i forvejen. Ved brug af disse typografier på websitet undgår serveren at downloade en helt ny font fra en tredje part.
-            <br />
-            <br />
-            Oftest er brødtekst størstedelen af tekst, som alligevel skal være læsbar, hvilket mange installerede fonte er.
-            </p>
-
+            <div className="describtion">
+              <p>
+              Typografi og farver har ikke kun indflydelse på visuelt kommunikation og identitet. Det har også effekt på strømforbruget.
+              <br />
+              <br />
+              <h4>Farver:</h4>
+              I dag består mange skærme af små OLED lamper for hver pixel, hvor hvid lyser kraftigst og ved helt sort er lamperne slukket.
+              <br />
+              <br />
+              Derfor bruges der også mere strøm, når lamperne lyser på deres kraftigste, og man kan med fordel ændre sit interface til dark mode, hvor det er muligt.
+              <br />
+              Ellers kan man med fordel også bruge mørke variationer af varme nuancer.
+              <br />
+              <br />
+              Af en uforklarlig årsag bruger blå nuancer også meget strøm.
+              <br />
+              <br />
+              <h4>Typografi:</h4>
+              Alle computere har forskellige fonte installeret i forvejen. Ved brug af disse typografier på websitet undgår serveren at downloade en helt ny font fra en tredje part.
+              <br />
+              <br />
+              Oftest er brødtekst størstedelen af tekst, som alligevel skal være læsbar, hvilket mange installerede fonte er.
+              </p>
+            </div>
+            
             <div className="foldergraphic">
             <iframe src="https://lottie.host/embed/d085b73b-b720-4ed9-93b9-14687da4f5f0/QWP0fOXFoS.json" loading="lazy"></iframe>
             </div>
@@ -242,7 +244,7 @@ export default function About() {
           </div>
 
           <div className="foldercontent">
-            <div>
+            <div className="describtion">
               <p>
               <h4>Websitets ydeevne:</h4>
               Ved at teste performance kan du blive klogere på websitet hastighed. En god performance gør brugeroplevelsen bedre.
@@ -273,7 +275,7 @@ export default function About() {
           </div>
 
           <div className="foldercontent">
-            <div>
+            <div className="describtion">
               <li>Hvis internettet var et land, ville det udlede lige så meget CO2 som det 4. mest forurenende land.</li>
               <br />
               <li>Internettet udleder mere CO2 end den kommercielle flytrafik.</li>

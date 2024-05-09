@@ -211,6 +211,7 @@ nav{
   max-height: 100%; /* 7dvh content showing når folder lukket*/
   transition: max-height 1.4s ease;
   display: flex;
+  justify-content: space-around;
 }
 
 .foldercontent li{
@@ -221,7 +222,7 @@ nav{
 .foldercontent p{
   padding-top: 2dvh;
   text-align: left;
-  width: 60%;
+  width: 75%;
 }
 
 .foldercontent a{
@@ -244,16 +245,26 @@ nav{
 }
 
 .foldercontent .foldergraphic{
-  width: 40%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: auto;
+  width: 80%;
 }
 
 .foldergraphic iframe{
   height: 100%;
-  width: auto;
+  width: 100%;
+}
+
+
+.packagecontent {
+  padding: 1% 0 2% 0;
+}
+
+.packagecontent p{
+  width: 75%;
+}
+
+.packagecontent li{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -517,6 +528,8 @@ iframe{
   width: 10%;
   padding: 5px 0;
   border-radius: 25px;
+  border-style: solid;
+  border-color: #412F26;
   background-color: #CBB89D;
   color: #412F26;
   transition: width 0.5s, height 0.5s, transform 0.5s;
