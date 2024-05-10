@@ -5,6 +5,9 @@ import pageload from "../assets/pageloadevergreen.svg";
 import imgvidoptimize from "../assets/billede-videooptimering.svg";
 import facts from "../assets/factsikon.svg";
 import { Form, Link } from "react-router-dom";
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
 
 export default function About() {
 
@@ -68,14 +71,15 @@ export default function About() {
         <div className="stortLogo"><img src={pageload} alt="loadikon"/></div>
 
         
+        <Accordion className="onefolder" style={{backgroundColor: "#B9C186", color: "#412F26"}}>
+          <AccordionSummary>
+            <div className="folderheadline">
+              <h2>IA & UX</h2>
+              <img src={folderarrow} alt="Pil" className="folderarrow" />
+            </div>
+          </AccordionSummary>
 
-        <div className="onefolder" style={{backgroundColor: "#B9C186", color: "#412F26"}}>
-          <div className="folderheadline">
-            <h2>IA & UX</h2>
-            <img src={folderarrow} alt="Pil" className="folderarrow" />
-          </div>
-
-          <div className="foldercontent">
+          <AccordionDetails className="foldercontent">
             <div className="describtion">
               <p>
               Informationsarkitektur og user experience er væsentlige faktorer for at optimere websitet. - Bæredygtigt eller ej.
@@ -94,22 +98,21 @@ export default function About() {
               I bogen “Don’t Make Me Think! A Common Sense Approach to Web usability”, Steve Krug, bliver der pointere, at brugerne slet ikke bruger så lang tid på hjemmesider, som vi designer dem til.
               </p>
             </div>
-            
             <div className="foldergraphic">
-            <iframe src="https://lottie.host/embed/ce58dd4d-0688-41d3-b82e-5cbafd29bcc8/TREKLiC6Y0.json" loading="lazy"></iframe>
+              <iframe src="https://lottie.host/embed/ce58dd4d-0688-41d3-b82e-5cbafd29bcc8/TREKLiC6Y0.json" loading="lazy"></iframe>
             </div>
-           
+          </AccordionDetails>
 
-          </div>
-        </div>
-
-        <div className="onefolder" style={{backgroundColor: "#6A6F4C", color: "#EDE1D2"}}>
-          <div className="folderheadline">
-            <h2>Optimering af kode</h2>
-            <img src={folderarrow} alt="Pil" className="folderarrow" />
-          </div>
-
-          <div className="foldercontent">
+        </Accordion>
+      
+        <Accordion className="onefolder" style={{backgroundColor: "#6A6F4C", color: "#EDE1D2"}}>
+          <AccordionSummary>
+            <div className="folderheadline">
+              <h2>Optimering af kode</h2>
+              <img src={folderarrow} alt="Pil" className="folderarrow" />
+            </div>
+          </AccordionSummary>
+          <AccordionDetails className="foldercontent">
             <div className="describtion">
               <p>
               Optimering af IA vil automatisk også optimere din kode. 
@@ -141,18 +144,18 @@ export default function About() {
             <div className="foldergraphic">
               <iframe src="https://lottie.host/embed/373f038b-37f8-46d4-a53d-ca5088024430/sPlogC1Cdj.json" loading="lazy"></iframe>
             </div>
-            
-          </div>
+          </AccordionDetails>
+        </Accordion>
 
-        </div>
+        <Accordion className="onefolder" style={{backgroundColor: "#806044", color: "#EDE1D2"}}>
+          <AccordionSummary>
+            <div className="folderheadline">
+              <h2>Billeder & videoer</h2>
+              <img src={folderarrow} alt="Pil" className="folderarrow" />
+            </div>
+          </AccordionSummary>
 
-        <div className="onefolder" style={{backgroundColor: "#806044", color: "#EDE1D2"}}>
-          <div className="folderheadline">
-            <h2>Billeder & videoer</h2>
-            <img src={folderarrow} alt="Pil" className="folderarrow" />
-          </div>
-
-          <div className="foldercontent">
+          <AccordionDetails className="foldercontent">
             <div className="describtion">
               <p>Først er det værd at overveje formålet med de visuelle medier, så de ikke tager unødvendigt plads. 
               <br />
@@ -195,16 +198,17 @@ export default function About() {
             <div className="foldergraphic">
               <img src={imgvidoptimize} alt="Billede og video ikoner"/>
             </div>
+          </AccordionDetails>
+        </Accordion>
 
-          </div>
-        </div>
-
-        <div className="onefolder" style={{backgroundColor: "#B9C186", color: "#412F26"}}>
-          <div className="folderheadline">
-            <h2>Visuelt design</h2>
-            <img src={folderarrow} alt="Pil" className="folderarrow" />
-          </div>
-          <div className="foldercontent">
+        <Accordion className="onefolder" style={{backgroundColor: "#B9C186", color: "#412F26"}}>
+          <AccordionSummary>
+            <div className="folderheadline">
+              <h2>Visuelt design</h2>
+              <img src={folderarrow} alt="Pil" className="folderarrow" />
+            </div>
+          </AccordionSummary>
+          <AccordionDetails className="foldercontent">
             <div className="describtion">
               <p>
               Typografi og farver har ikke kun indflydelse på visuelt kommunikation og identitet. Det har også effekt på strømforbruget.
@@ -231,19 +235,19 @@ export default function About() {
             </div>
             
             <div className="foldergraphic">
-            <iframe src="https://lottie.host/embed/d085b73b-b720-4ed9-93b9-14687da4f5f0/QWP0fOXFoS.json" loading="lazy"></iframe>
+              <iframe src="https://lottie.host/embed/d085b73b-b720-4ed9-93b9-14687da4f5f0/QWP0fOXFoS.json" loading="lazy"></iframe>
             </div>
-          
-          </div>
-        </div>
+          </AccordionDetails>
+        </Accordion>
 
-        <div className="onefolder" style={{backgroundColor: "#6A6F4C", color: "#EDE1D2"}}>
-          <div className="folderheadline">
-            <h2>Performance</h2>
-            <img src={folderarrow} alt="Pil" className="folderarrow" />
-          </div>
-
-          <div className="foldercontent">
+        <Accordion className="onefolder" style={{backgroundColor: "#6A6F4C", color: "#EDE1D2"}}>
+          <AccordionSummary>
+            <div className="folderheadline">
+              <h2>Performance</h2>
+              <img src={folderarrow} alt="Pil" className="folderarrow" />
+            </div>
+          </AccordionSummary>
+          <AccordionDetails className="foldercontent">
             <div className="describtion">
               <p>
               <h4>Websitets ydeevne:</h4>
@@ -264,17 +268,17 @@ export default function About() {
             <div className="foldergraphic">
               <iframe src="https://lottie.host/embed/976cb7bb-81f5-40b4-9320-d3eeda8a14a2/mkDHBMjSDx.json" loading="lazy"></iframe>
             </div>
+          </AccordionDetails>
+        </Accordion>
 
-          </div>
-        </div>
-
-        <div className="onefolder" style={{backgroundColor: "#806044", color: "#EDE1D2"}} id="facts">
-          <div className="folderheadline">
-            <h2>Fun & sad facts</h2>
-            <img src={folderarrow} alt="Pil" className="folderarrow" />
-          </div>
-
-          <div className="foldercontent">
+        <Accordion className="onefolder" style={{backgroundColor: "#806044", color: "#EDE1D2"}} id="facts">
+          <AccordionSummary>
+            <div className="folderheadline">
+              <h2>Fun & sad facts</h2>
+              <img src={folderarrow} alt="Pil" className="folderarrow" />
+            </div>
+          </AccordionSummary>
+          <AccordionDetails className="foldercontent">
             <div className="describtion">
               <li>Hvis internettet var et land, ville det udlede lige så meget CO2 som det 4. mest forurenende land.</li>
               <br />
@@ -302,14 +306,10 @@ export default function About() {
             </div>
               
             <div className="foldergraphic">
-              <img src={facts} alt="Infomation ikon"/>
+              <img src={facts} id="factsicon" alt="Infomation ikon"/>
             </div>
-
-          </div>
-
-        </div>
-
-
+          </AccordionDetails>
+        </Accordion>
 
       </div>
         </>

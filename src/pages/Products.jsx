@@ -1,7 +1,5 @@
 import Card from "../components/Cards";
 import folderarrow from "../assets/folderpilned.svg";
-import Leasbtn from "../components/Leasbtn";
-import Folderdescribtion from "../components/Folderdescribtion";
 import Beforeandafter from "../components/Beforeandafter";
 import Centertekst from "../components/Centertekst";
 import LilleKunde1 from "../assets/LilleKunde1.png";
@@ -13,6 +11,9 @@ import foereksempel2 from "../assets/foereksempel2-min.jpg";
 import foereksempel3 from "../assets/foereksempel3-min.jpg";
 import eftereksempel2 from "../assets/eftereksempel2-min.jpg";
 import eftereksempel3 from "../assets/eftereksempel3-min.jpg";
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
 
 export default function Products() {
 
@@ -21,21 +22,22 @@ export default function Products() {
         <>
     <div className="baggrund">
 
-
         <Centertekst overskrift="Pakker vi tilbyder" brodtekst="Herunder kan du læse, hvilke ydelser der hører med i de forskellige pakker. 
         Husk at vejledning og rådgivning alle dage, på mail og telefon, er med i alle pakkerne. " />
 
 
-        <div className="onefolder" style={{backgroundColor: "#B9C186", color: "#412F26"}}>
-          <div className="folderheadline">
-            <h2>Pakke 1 - Billedeoptimering</h2>
-            <img src={folderarrow} alt="Pil" className="folderarrow" />
-          </div>
+        <Accordion className="onefolder" style={{backgroundColor: "#B9C186", color: "#412F26"}}>
+          <AccordionSummary >
+            <div className="folderheadline">
+              <h2>Pakke 1 - Billedeoptimering</h2>
+              <img src={folderarrow} alt="Pil" className="folderarrow" />
+            </div>
+          </AccordionSummary>
 
-          <div className="packagecontent">
+          <AccordionDetails className="packagecontent">
             <p>Hos Evergreen har vi forståelse for, at den komplette omstilling kan virke uoverskuelig. <br />
             Derfor har vi lavet en pakke, hvor vi komprimere visuelle medier og opdatere koden, samt sletter gammelt ubrugeligt kode.</p>
-           <br />
+            <br />
               <h4>Det får du med i pakken:</h4>
               <br />
               <li>Komprimering af billeder og videoer</li>
@@ -57,16 +59,18 @@ export default function Products() {
             lagringspladspost="504 KB"
             kgwattpost="20 kg/watt"
             />
-          </div>
-        </div>
+          </AccordionDetails>
+        </Accordion>
+        
+        <Accordion className="onefolder" style={{backgroundColor: "#6A6F4C", color: "#EDE1D2"}}>
+          <AccordionSummary >
+            <div className="folderheadline">
+              <h2>Pakke 2 - Designoptimering</h2>
+              <img src={folderarrow} alt="Pil" className="folderarrow" />
+            </div>
+          </AccordionSummary>
 
-        <div className="onefolder" style={{backgroundColor: "#6A6F4C", color: "#EDE1D2"}}>
-          <div className="folderheadline">
-            <h2>Pakke 2 - Designoptimering</h2>
-            <img src={folderarrow} alt="Pil" className="folderarrow" />
-          </div>
-
-          <div className="packagecontent">
+          <AccordionDetails className="packagecontent">
             <p>Med designoptimering tilføjer vi et nyt design, der mindsker energiforbruget, samt opdater koden og komprimere visuelle medier.
             <br />
             Denne pakke er populær, fordi vi bevare dit brand og identitet.</p>
@@ -93,16 +97,19 @@ export default function Products() {
             lagringspladspost="378 KB"
             kgwattpost="17 kg/watt"
             />
-          </div>
-        </div>
+          </AccordionDetails>
 
-        <div className="onefolder" style={{backgroundColor: "#806044", color: "#EDE1D2"}}>
-          <div className="folderheadline">
-            <h2>Pakke 3 - Rebranding</h2>
-            <img src={folderarrow} alt="Pil" className="folderarrow" />
-          </div>
+        </Accordion>
 
-          <div className="packagecontent">
+        <Accordion className="onefolder" style={{backgroundColor: "#806044", color: "#EDE1D2"}}>
+          <AccordionSummary >
+            <div className="folderheadline">
+              <h2>Pakke 3 - Rebranding</h2>
+              <img src={folderarrow} alt="Pil" className="folderarrow" />
+            </div>
+          </AccordionSummary>
+
+          <AccordionDetails className="packagecontent">
             <p>Her får du hele pakken!
             <br />
             Vi går all in og optimerer dit website på alle parameter vi ved er mulige. 
@@ -137,8 +144,8 @@ export default function Products() {
             lagringspladspost="482 KB"
             kgwattpost="10 kg/watt"
             />
-          </div>
-        </div>
+          </AccordionDetails>
+        </Accordion>
     
           <h3 className="centerTekst">Eksempler fra tidligere kunder</h3>
           <div className="allcards">

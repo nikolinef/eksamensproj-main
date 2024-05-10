@@ -209,7 +209,6 @@ nav{
 
 .foldercontent{
   max-height: 100%; /* 7dvh content showing når folder lukket*/
-  transition: max-height 1.4s ease;
   display: flex;
   justify-content: space-around;
 }
@@ -222,7 +221,7 @@ nav{
 .foldercontent p{
   padding-top: 2dvh;
   text-align: left;
-  width: 75%;
+  width: 80%;
 }
 
 .foldercontent a{
@@ -236,17 +235,15 @@ nav{
   text-decoration: underline;
 }
 
-.onefolder.active .foldercontent{
-  max-height: 100dvh;
-}
-
-.onefolder.active .folderarrow{
-  transform: rotate(180deg);
-}
-
 .foldercontent .foldergraphic{
   height: auto;
-  width: 80%;
+  width: 75%;
+}
+
+.foldergraphic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .foldergraphic iframe{
@@ -254,6 +251,9 @@ nav{
   width: 100%;
 }
 
+.foldergraphic #factsicon{
+  width: 65%;
+}
 
 .packagecontent {
   padding: 1% 0 2% 0;
@@ -408,6 +408,8 @@ nav{
 .funfact p{
   padding: 1% 0 1.5% 0;
 }
+
+
 
 
 /****** STORT LOGO ****/

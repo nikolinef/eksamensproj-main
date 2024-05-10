@@ -5,8 +5,12 @@ import Vejledningstid from '../components/Vejledningstid';
 import Costumerrequest from '../components/Costumerrequest';
 import FAQ from '../components/FAQ';
 import React, {useState} from 'react';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
 
 export default function Homepage() {
+  
 
     return (
         <>
@@ -15,13 +19,14 @@ export default function Homepage() {
         <Centertekst overskrift="Kontakt Evergreen" brodtekst="Her kan du sende en forespørgsel på et møde eller stille os andre spørgsmål. Husk at vi har en FAQ, hvor du sandsynligvis kan finde svar på dine spørgsmål, ellers er du velkommen til at kontakte os på mail eller telefon" />
 
 
-        <div className="onefolder" style={{backgroundColor: "#B9C186", color: "#412F26"}} id='mdebook'>
-          <div className="folderheadline">
-            <h2>Book et møde</h2>
-            <img src={folderarrow} alt="Pil" className="folderarrow" />
-          </div>
-
-          <div className="packagecontent">
+        <Accordion className="onefolder" style={{backgroundColor: "#B9C186", color: "#412F26"}} id='mdebook' defaultExpanded>
+          <AccordionSummary>
+            <div className="folderheadline">
+              <h2>Book et møde</h2>
+              <img src={folderarrow} alt="Pil" className="folderarrow" />
+            </div>
+          </AccordionSummary>
+          <AccordionDetails className="packagecontent">
             <Folderdescribtion
             fdescribtion="Send en forespørgsel på et mødetidspunkt, dato og evt. sted. Vi tager rundt i hele landet for at hjælpe virksomhed."
             />
@@ -35,18 +40,17 @@ export default function Homepage() {
             />
             <br />
             <Costumerrequest />
-            
-
-          </div>
-        </div>
-
-        <div className="onefolder" style={{backgroundColor: "#6A6F4C", color: "#EDE1D2"}}>
-        <div className="folderheadline">
-            <h2>FAQ</h2>
-            <img src={folderarrow} alt="Pil" className="folderarrow" />
-          </div>
-
-          <div className="packagecontent">
+          </AccordionDetails>
+        </Accordion>
+      
+        <Accordion className="onefolder" style={{backgroundColor: "#6A6F4C", color: "#EDE1D2"}}>
+          <AccordionSummary>
+            <div className="folderheadline">
+              <h2>FAQ</h2>
+              <img src={folderarrow} alt="Pil" className="folderarrow"  />
+            </div>
+          </AccordionSummary>
+          <AccordionDetails className="packagecontent">
             <Folderdescribtion
             fdescribtion="Vi har samlet svarene på de hyppigste spørgsmål vi får:"
             />
@@ -84,16 +88,17 @@ export default function Homepage() {
             <Folderdescribtion
             fdescribtion="Har du stadig ikke fået svar, er du selvfølgelig velkommen til at kontakte os. Se træffetider under Rådgivning og vejledning"
             />
-          </div>
-        </div>
+          </AccordionDetails>
+        </Accordion>
 
-        <div className="onefolder" style={{backgroundColor: "#806044", color: "#EDE1D2"}}>
-          <div className="folderheadline">
-              <h2>Rådgivning & vejledning</h2>
-              <img src={folderarrow} alt="Pil" className="folderarrow" />
-          </div>
-
-          <div className="packagecontent">
+        <Accordion className="onefolder" style={{backgroundColor: "#806044", color: "#EDE1D2"}}>
+          <AccordionSummary>
+            <div className="folderheadline">
+                <h2>Rådgivning & vejledning</h2>
+                <img src={folderarrow} alt="Pil" className="folderarrow" />
+            </div>
+          </AccordionSummary>
+          <AccordionDetails className="packagecontent">
             <Folderdescribtion
             fdescribtion="Har du spørgsmål til vores implementeringsguide for CO2-reducerende tiltag,"
             />
@@ -102,9 +107,8 @@ export default function Homepage() {
             />
             <br />
             <Vejledningstid />
-
-          </div>
-        </div>
+          </AccordionDetails>
+        </Accordion>
         
       </div>
         </>
