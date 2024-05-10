@@ -1,6 +1,6 @@
 import Centertekst from "../components/Centertekst"
 import Leasbtn from "../components/Leasbtn";
-import Card from "../components/Cards";
+import CardswBtn from "../components/CardswBtn";
 import Funfact from "../components/Funfact";
 import Carousel from "../components/Carousel";
 import ECO from "../components/ECOgrader";
@@ -41,7 +41,7 @@ export default function Homepage() {
 
                 <h2 className="underOverskrift">Vores pakker</h2>
                 <div className="allcards">
-                    <Card
+                    <CardswBtn
                     title="Pakke 1"
                     image={forsideeksempel1} // 300x200px
                     alt="Example Image"
@@ -49,14 +49,14 @@ export default function Homepage() {
                     paragraph="Hos Evergreen har vi forståelse for, at den komplette omstilling kan virke uoverskuelig. Derfor har vi lavet en pakke, hvor vi komprimerer visuelle medier og opdaterer koden, samt sletter gammelt ubrugeligt kode."
                 />
 
-                    <Card
+                    <CardswBtn
                     title="Pakke 2"
                     image={forsideeksempel2}
                     alt="Example Image"
                     underTitle="Designoptimering"
                     paragraph="Med designoptimering tilføjer vi et nyt design, der mindsker energiforbruget, samt opdater koden og komprimerer visuelle medier. Denne pakke er populær, fordi vi bevarer dit brand og identitet."
                 />
-                    <Card
+                    <CardswBtn
                     title="Pakke 3"
                     image={forsideeksempel3}
                     alt="Example Image"

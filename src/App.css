@@ -306,6 +306,11 @@ nav{
   border-radius: 25px;
 }
 
+.card .leasbtn{
+  width: 50%;
+  margin: 0;
+}
+
 /****** FOOTER CSS *****/
 
 .footer {
